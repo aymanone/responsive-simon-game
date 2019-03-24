@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>simon game</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+<body>
+<main>
+    <div id="game-interface">
+        <label id="show-game-state" style="flex-grow: 6;"> not starting yet</label>
+        <button style="flex-grow: 2;" onclick="startGame()">start game</button>
+        <button style="flex-grow: 2;" onclick="newGame()">reset</button>
+    </div>
+    <div id="game-space">
+    <div class="triangle" id="first-q" onclick="evalPlayerClick(this)" >&nbsp;</div>
+    <div class="triangle" id="second-q"onclick="evalPlayerClick(this)" >&nbsp;</div>
+    <div class="triangle" id="third-q" onclick="evalPlayerClick(this)">&nbsp;</div>
+    <div class="triangle" id="forth-q"onclick="evalPlayerClick(this)" >&nbsp;</div>
+    </div>
+    
+</main>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
